@@ -36,9 +36,11 @@
             backdrop-filter: blur(10px);
             border-radius: 20px;
             padding: 60px;
+            padding-bottom: 100px;
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
             border: 1px solid rgba(255, 255, 255, 0.18);
             animation: slideIn 0.5s ease-out;
+            overflow-y: auto;
         }
 
         .slide.active {
@@ -163,7 +165,7 @@
 
         .navigation {
             position: fixed;
-            bottom: 30px;
+            bottom: 20px;
             right: 30px;
             display: flex;
             gap: 15px;
@@ -174,10 +176,10 @@
             background: rgba(212, 175, 55, 0.2);
             border: 2px solid #d4af37;
             color: #d4af37;
-            padding: 15px 30px;
+            padding: 10px 20px;
             border-radius: 10px;
             cursor: pointer;
-            font-size: 1.1em;
+            font-size: 0.95em;
             font-weight: 600;
             transition: all 0.3s ease;
         }
@@ -196,7 +198,7 @@
 
         .slide-counter {
             position: fixed;
-            bottom: 30px;
+            bottom: 20px;
             left: 30px;
             font-size: 1.2em;
             color: #d4af37;
@@ -288,16 +290,15 @@
 <body>
     <div class="company-logo">MEDUSA CAPITAL</div>
     <div class="slide-counter">
-        <span id="current-slide">1</span> / <span id="total-slides">18</span>
+        <span id="current-slide">1</span> / <span id="total-slides">16</span>
     </div>
 
     <div class="presentation-container">
-        <!-- Slide 1: Title -->
+        <!-- Slide 1: Title (EDITED - removed subtitle "An Asymmetric Risk/Reward Opportunity") -->
         <div class="slide active">
             <div style="height: 100%; display: flex; flex-direction: column; justify-content: center; text-align: center;">
                 <h1 style="font-size: 4em; color: #d4af37; margin-bottom: 30px;">GOLD</h1>
-                <h2 style="font-size: 2.5em; margin-bottom: 20px;">The Strategic Hedge for 2026</h2>
-                <p style="font-size: 1.5em; color: #b8b8b8; margin-bottom: 40px;">An Asymmetric Risk/Reward Opportunity</p>
+                <h2 style="font-size: 2.5em; margin-bottom: 60px;">The Strategic Hedge for 2026</h2>
                 <div style="border-top: 2px solid #d4af37; padding-top: 40px; margin-top: 40px;">
                     <p style="font-size: 1.3em; color: #b8b8b8;">Medusa Capital Investment Committee</p>
                     <p style="font-size: 1.1em; color: #888; margin-top: 10px;">November 2025</p>
@@ -1018,69 +1019,6 @@
             <p class="source">Discipline beats emotion. Stick to the plan.</p>
         </div>
 
-        <!-- Slide 17: Key Takeaways -->
-        <div class="slide">
-            <div class="slide-header">
-                <h1 class="slide-title">Key Takeaways</h1>
-                <p class="slide-subtitle">The Investment Thesis in Five Points</p>
-            </div>
-
-            <div class="content-section">
-                <div class="success-box">
-                    <p style="font-size: 1.4em; font-weight: 600; color: #34c759; margin-bottom: 15px;">1. Market Conditions Are Historically Extreme</p>
-                    <p class="content-text">Valuations at levels seen only before major crashes. Debt mathematically unsustainable.</p>
-                </div>
-
-                <div class="success-box" style="margin-top: 20px;">
-                    <p style="font-size: 1.4em; font-weight: 600; color: #34c759; margin-bottom: 15px;">2. Central Banks Are Voting with Their Wallets</p>
-                    <p class="content-text">1,000+ tonnes annually. 95% plan to increase holdings. This creates structural support.</p>
-                </div>
-
-                <div class="success-box" style="margin-top: 20px;">
-                    <p style="font-size: 1.4em; font-weight: 600; color: #34c759; margin-bottom: 15px;">3. Gold Has Protected Wealth Through Every Crisis</p>
-                    <p class="content-text">+35% annually in stagflation. +163% after 2008. Outperforms S&P by 37% in recessions.</p>
-                </div>
-
-                <div class="success-box" style="margin-top: 20px;">
-                    <p style="font-size: 1.4em; font-weight: 600; color: #34c759; margin-bottom: 15px;">4. The Setup Is Asymmetric</p>
-                    <p class="content-text">Limited downside (3-5% position). Significant upside if thesis correct. Classic risk/reward.</p>
-                </div>
-
-                <div class="success-box" style="margin-top: 20px;">
-                    <p style="font-size: 1.4em; font-weight: 600; color: #34c759; margin-bottom: 15px;">5. Timing Is Now</p>
-                    <p class="content-text">Window to position before volatility: Nov 2025 - Q1 2026. Entry window closing.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Slide 18: Final Slide -->
-        <div class="slide">
-            <div style="height: 100%; display: flex; flex-direction: column; justify-content: center; text-align: center;">
-                <h1 style="font-size: 3.5em; color: #d4af37; margin-bottom: 30px;">Questions & Discussion</h1>
-                
-                <div style="margin: 50px 0;">
-                    <p style="font-size: 1.5em; color: #e0e0e0; margin-bottom: 20px;">
-                        "Be fearful when others are greedy,<br>
-                        and greedy when others are fearful."
-                    </p>
-                    <p style="font-size: 1.2em; color: #d4af37;">— Warren Buffett</p>
-                </div>
-
-                <div style="border-top: 2px solid #d4af37; padding-top: 40px; margin-top: 40px;">
-                    <p style="font-size: 1.3em; color: #b8b8b8;">Medusa Capital Investment Committee</p>
-                    <p style="font-size: 1em; color: #888; margin-top: 15px;">November 2025</p>
-                    
-                    <div style="margin-top: 40px; padding: 20px; background: rgba(212, 175, 55, 0.1); border-radius: 10px; display: inline-block;">
-                        <p style="font-size: 1.1em; color: #e0e0e0;">
-                            <span class="highlight">Recommended Action:</span> 
-                            Purchase $4,500 GLDM<br>
-                            Entry: Nov 2025 - Jan 2026<br>
-                            Hold: 12-24 months
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <div class="navigation">
